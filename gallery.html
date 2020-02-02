@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/audio.js/audio.min.js"></script>
+    <script src="js/nsfplayer.js/index.js"></script>
+    <script src="js/nsfplayer.js/libgme.js"></script>
+    <script src="js/musicScript.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="blogs.html">Blogs</a>
+            <a class="nav-item nav-link" href="achievement.html">Achievement</a>
+            <a class="nav-item nav-link active" href="#">Gallery</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+        </div>
+    </nav>
+    <!-- Header -->
+    <div class="container">
+        <h1>Gallery</h1>
+        <p class="lead">
+            Some of my works.
+        </p>
+        <hr>
+    </div>
+    <!-- Main-->
+    <script>
+        const NSF_PLAYER = createNsfPlayer();
+    </script>
+    <div class="container">
+        <h3>Chiptune</h3>
+        <p class="lead">Made with Famitracker</p>
+        <p class="small">* Due to a problem that the NsfPlayer can't play MMC5 songs, some of these are Mp3 files.</p>
+        <ul class="list-group">
+            
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Nsf-2A03]Mega Man 11 - Acid Man Stage</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-2A03]Mega Man 11 - Acid Man Stage.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Nsf-FDS]PMGen8 - Battle! VS Gym Leader</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-FDS]PMGen8 - Battle! VS Gym Leader.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Nsf-VRC6]Castlevania Order of Ecclesia-Blue Sorrow Rhapsody</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-VRC6]Castlevania Order of Ecclesia-Blue Sorrow Rhapsody.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+        </ul>
+        <hr>
+        <h3>Artworks</h3>
+        <p class="lead">Painted with Procreate</p>
+        <p class="small">* Currently empty because of my poor skills</p>
+    </div>
+
+    <!-- nsf player test
+    <script>
+        const nsfPlayer = createNsfPlayer();
+        nsfPlayer.play('rawaudio/vrc6test.nsf', 0);
+    </script>
+    -->
+    <!-- Main -->
+    <!-- audio.js player test
+    <script>
+        //init audio.js
+        audiojs.events.ready(function() {
+            var as = audiojs.createAll();
+        });
+    </script>
+    <div class="container">
+        <audio preload="auto" loop="true">
+            <source src="rawaudio/test.ogg"/>
+        </audio>
+    </div>
+    !-->
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "在duolingo上学习日语",
+        "progress": "20%",
+        "description": "20%"
+    },
+    {
+        "name": "学习网络基础",
+        "progress": "70%",
+        "description": "70%"
+    },
+    {
+        "name": "机器学习项目开发",
+        "progress": "30%",
+        "description": "30%"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "塞尔达传说：梦见岛 | Legend of Zelda: Link's Awakening",
+        "platform": "GBC",
+        "status": "Beaten",
+        "time": "2020-01-10"
+    },
+    {
+        "name": "塞尔达传说：大地之章 | Legend of Zelda: Chapter of Season",
+        "platform": "GBC",
+        "status": "Playing",
+        "time": "---"
+    },
+    {
+        "name": "死亡细胞 | Dead Cells",
+        "platform": "PC",
+        "status": "Playing",
+        "time": "---"
+    },
+    {
+        "name": "节奏地牢 | Dungeon of the Necro Dancer",
+        "platform": "PC",
+        "status": "Almost Beaten",
+        "time": "2020-01"
+    },
+    {
+        "name": "失落城堡 | Lost Castle",
+        "platform": "PC",
+        "status": "Not playing",
+        "time": "2019-12"
+    },
+    {
+        "name": "洛克人同人：Rock'n Roll",
+        "platform": "PC",
+        "status": "AlmostBeaten",
+        "time": "2019-12"
+    },
+    {
+        "name": "月圆之夜 | Night of the Full Moon",
+        "platform": "PC",
+        "status": "Not playing",
+        "time": "2019-11"
+    }
+]
