@@ -9,8 +9,7 @@ const createNsfPlayer = (audioContext) => {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', fileName, true);
-    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhr.open('GET', fileName, true);
     xhr.responseType = 'arraybuffer';
     xhr.onerror = (e) => {
       message(e);
@@ -24,7 +23,7 @@ const createNsfPlayer = (audioContext) => {
       playMusicData(payload, trackNo);
       updateSongInfo(fileName, trackNo);
     };
-    xhr.send("name='asd'");
+    xhr.send();
   };
 
   const stop = () => {
