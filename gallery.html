@@ -4,47 +4,56 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/customized.css">
     <script src="js/jQuery3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/audio.js/audio.min.js"></script>
     <script src="js/nsfplayer.js/index.js"></script>
     <script src="js/nsfplayer.js/libgme.js"></script>
     <script src="js/musicScript.js"></script>
+    <script src="js/util.js"></script>
 </head>
 <body>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-primary c-back-to-top-nav" onclick="unitScrollInit()">
+        返回顶部
+    </button>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="blogs.html">Blogs</a>
-            <a class="nav-item nav-link" href="achievement.html">Achievement</a>
-            <a class="nav-item nav-link active" href="#">Gallery</a>
-            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="blogs.html">文章</a>
+            <a class="nav-item nav-link" href="achievement.html">足迹</a>
+            <a class="nav-item nav-link active" href="#">展览</a>
+            <a class="nav-item nav-link" href="about.html">关于</a>
         </div>
     </nav>
     <!-- Header -->
     <div class="container">
-        <h1>Gallery</h1>
+        <h1>展览</h1>
         <p class="lead">
-            Some of my works.
+            放一些我的音乐和绘画作品
         </p>
         <hr>
+
+        <!-- Badge Nav Pills -->
+        <span class="badge badge-pill badge-primary"><a class="text-white" href="#id-chiptune-remastered">重制芯片音乐</a></span>
+        <span class="badge badge-pill badge-primary"><a class="text-white" href="#id-chiptune-original">原创芯片音乐</a></span>
+        <span class="badge badge-pill badge-primary"><a class="text-white" href="#id-artwork">绘画</a></span>
     </div>
     <!-- Main-->
     <script>
         const NSF_PLAYER = createNsfPlayer();
     </script>
     <div class="container">
-        <h3>Chiptune</h3>
-        <p class="lead">Made with Famitracker</p>
-        <p class="small">* Due to a problem that the NsfPlayer can't play MMC5 songs, some of these are Mp3 files.</p>
+        <h3 id="id-chiptune-remastered">重制芯片音乐</h3>
+        <p class="small">* 部分芯片音乐(使用FDS/MMC5/VRC7芯片)不能播放，用ogg文件替代</p>
         <ul class="list-group">
             
     <div>
         <li class="list-group-item d-flex">
             <span class="col-9">[Nsf-2A03]Mega Man 11 - Acid Man Stage</span>
             <span class="col-3">
-                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-2A03]Mega Man 11 - Acid Man Stage.nsf')">Play</button>
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/remastered/[Nsf-2A03]Mega Man 11 - Acid Man Stage.nsf')">Play</button>
                 <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
             </span>
         </li>
@@ -52,9 +61,9 @@
     
     <div>
         <li class="list-group-item d-flex">
-            <span class="col-9">[Nsf-FDS]PMGen8 - Battle! VS Gym Leader</span>
+            <span class="col-9">[Nsf-2A03]Mega Man 11 - Fuse Man Stage</span>
             <span class="col-3">
-                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-FDS]PMGen8 - Battle! VS Gym Leader.nsf')">Play</button>
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/remastered/[Nsf-2A03]Mega Man 11 - Fuse Man Stage.nsf')">Play</button>
                 <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
             </span>
         </li>
@@ -64,7 +73,101 @@
         <li class="list-group-item d-flex">
             <span class="col-9">[Nsf-VRC6]Castlevania Order of Ecclesia-Blue Sorrow Rhapsody</span>
             <span class="col-3">
-                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/[Nsf-VRC6]Castlevania Order of Ecclesia-Blue Sorrow Rhapsody.nsf')">Play</button>
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/remastered/[Nsf-VRC6]Castlevania Order of Ecclesia-Blue Sorrow Rhapsody.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Ogg]Mega Man ZX - Oriental Sentinel</span>
+            <span class="col-3">
+                <audio src="rawaudio/remastered/[Ogg]Mega Man ZX - Oriental Sentinel.ogg" loop="true" preload="false"></audio>
+                <button class="btn badge badge-success play" onclick="audioPlay(this)">Play</button>
+                <button class="btn badge badge-danger pause" style="display: none;" onclick="audioPause(this)">Pause</button>
+                <button class="btn badge badge-danger stop" onclick="audioStop(this)">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Ogg]Mega Man ZX - Wonder Panorama</span>
+            <span class="col-3">
+                <audio src="rawaudio/remastered/[Ogg]Mega Man ZX - Wonder Panorama.ogg" loop="true" preload="false"></audio>
+                <button class="btn badge badge-success play" onclick="audioPlay(this)">Play</button>
+                <button class="btn badge badge-danger pause" style="display: none;" onclick="audioPause(this)">Pause</button>
+                <button class="btn badge badge-danger stop" onclick="audioStop(this)">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Ogg]Pokemon-Gen8-Battle-VS-Gym-Leader</span>
+            <span class="col-3">
+                <audio src="rawaudio/remastered/[Ogg]Pokemon-Gen8-Battle-VS-Gym-Leader.ogg" loop="true" preload="false"></audio>
+                <button class="btn badge badge-success play" onclick="audioPlay(this)">Play</button>
+                <button class="btn badge badge-danger pause" style="display: none;" onclick="audioPause(this)">Pause</button>
+                <button class="btn badge badge-danger stop" onclick="audioStop(this)">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Ogg]Pokemon-Gen8-Battle_-VS-Marnie</span>
+            <span class="col-3">
+                <audio src="rawaudio/remastered/[Ogg]Pokemon-Gen8-Battle_-VS-Marnie.ogg" loop="true" preload="false"></audio>
+                <button class="btn badge badge-success play" onclick="audioPlay(this)">Play</button>
+                <button class="btn badge badge-danger pause" style="display: none;" onclick="audioPause(this)">Pause</button>
+                <button class="btn badge badge-danger stop" onclick="audioStop(this)">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+        </ul>
+        <hr>
+
+        <h3 id="id-chiptune-original">原创芯片音乐</h3>
+        <ul class="list-group">
+            
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Megaman Styled] A Glow in the Dim</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/original/[Megaman Styled] A Glow in the Dim.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Megaman Styled] Elemental Space</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/original/[Megaman Styled] Elemental Space.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Megaman Styled] Flashing Aura</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/original/[Megaman Styled] Flashing Aura.nsf')">Play</button>
+                <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
+            </span>
+        </li>
+    </div>
+    
+    <div>
+        <li class="list-group-item d-flex">
+            <span class="col-9">[Megaman Styled] Subzero Inferno</span>
+            <span class="col-3">
+                <button class="btn badge badge-success" onclick="NSF_PLAYER.play('rawaudio/original/[Megaman Styled] Subzero Inferno.nsf')">Play</button>
                 <button class="btn badge badge-danger" onclick="NSF_PLAYER.stop()">Stop</button>
             </span>
         </li>
@@ -72,9 +175,10 @@
     
         </ul>
         <hr>
-        <h3>Artworks</h3>
-        <p class="lead">Painted with Procreate</p>
-        <p class="small">* Currently empty because of my poor skills</p>
+
+        <h3 id="id-artwork">绘画</h3>
+        <p class="lead">在ipad上乱涂乱画</p>
+        <p class="small">* Oops, 作者绘画太辣眼睛，暂时找不到给你看的合适画作...</p>
     </div>
 
     <!-- nsf player test

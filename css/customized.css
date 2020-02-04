@@ -1,0 +1,7 @@
+/*Back to top button CSS*/
+.c-back-to-top-nav {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 9999;
+}

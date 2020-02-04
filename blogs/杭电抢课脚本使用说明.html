@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Axios</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>杭电抢课脚本使用说明</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
@@ -151,79 +151,6 @@ svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
-
-
-.CodeMirror { height: auto; }
-.CodeMirror.cm-s-inner { background: inherit; }
-.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
-.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
-.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
-.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
-.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
-.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
-.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
-.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
-.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
-.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
-.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
-.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
-.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
-.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
-.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
-.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
-.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
-.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
-.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
-.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
-.cm-negative { color: rgb(221, 68, 68); }
-.cm-positive { color: rgb(34, 153, 34); }
-.cm-header, .cm-strong { font-weight: 700; }
-.cm-del { text-decoration: line-through; }
-.cm-em { font-style: italic; }
-.cm-link { text-decoration: underline; }
-.cm-error { color: red; }
-.cm-invalidchar { color: red; }
-.cm-constant { color: rgb(38, 139, 210); }
-.cm-defined { color: rgb(181, 137, 0); }
-div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
-div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
-.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
-.CodeMirror { position: relative; overflow: hidden; }
-.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
-.CodeMirror-sizer { position: relative; }
-.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
-.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
-.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
-.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
-.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
-.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
-.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
-.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
-.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
-.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
-.CodeMirror-lines { cursor: text; }
-.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
-.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
-.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
-.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
-.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
-.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
-.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
-.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
-.CodeMirror-measure pre { position: static; }
-.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
-.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
-.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
-.cm-searching { background: rgba(255, 255, 0, 0.4); }
-@media print {
-  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
-}
 
 
 :root {
@@ -575,9 +502,27 @@ header, .context-menu, .megamenu-content, footer{
 
 
 </style>
-</head>
-<body class='typora-export os-windows' >
-<configuration tag='Node.js Js 技术'/>
-<div  id='write'  class = 'is-node'><h1><a name="axios-跨域访问教程" class="md-header-anchor"></a><span>Axios 跨域访问教程</span></h1><p></p><ol start='' ><li><span>创建一个 vue 项目 </span><code>vue init webpack [项目名称]</code></li><li><span>安装axios，在项目根目录下，运行 </span><code>npm install axios</code></li><li><span>config 下的 index.js 中的 proxytable 按如下方式配置：</span></li></ol><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="js"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">proxyTable</span>: {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">//api表示处理api开头的请求</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-string">'/api'</span>: {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//访问的目标是老王的个人网站，端口8080</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">target</span>:<span class="cm-string">'http://hades300.top:8080'</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//允许跨域访问</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">changeOrigin</span>:<span class="cm-atom">true</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">//路径重写</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">pathRewrite</span>:{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'^/api'</span>: <span class="cm-string">''</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  },</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 299px;"></div><div class="CodeMirror-gutters" style="display: none; height: 299px;"></div></div></div></pre><ol start='4' ><li><span>main.js 中，</span><code>import axios from &#39;axios&#39;</code></li><li><span>main.js 中，在 </span><code>new vue({...})</code><span> 下面写：</span></li></ol><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="js"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">axios</span>.<span class="cm-property">defaults</span>.<span class="cm-property">baseURL</span> <span class="cm-operator">=</span> <span class="cm-string">'/api'</span><span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-comment">//默认的axios请求路径为/api</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">axios</span>.<span class="cm-property">get</span>(<span class="cm-string">"/deal"</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-property">then</span>(<span class="cm-keyword">function</span>(<span class="cm-def">response</span>){<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">response</span>)})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-property">catch</span>(<span class="cm-keyword">function</span>(<span class="cm-def">error</span>){<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">error</span>)})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">/*</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">过程：</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">/deal 转化为 /api/deal</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">由于配置文件中，proxytable 配置了 /api 的处理方式是把 /api 重写为空白，所以转化为</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">http://hades300.top:8080/deal</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">由于发出请求方域名localhost 收到方域名为hades300.top 存在 跨域 现象</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">设置changeOrigin为true后，可以进行跨域访问</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">在浏览器F12看控制台，可以看到反馈的响应response，说明访问已经成功！</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">*/</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 299px;"></div><div class="CodeMirror-gutters" style="display: none; height: 299px;"></div></div></div></pre><p>&nbsp;</p></div>
+
+            <link rel="stylesheet" href="../css/bootstrap.min.css">
+            <script src="../js/jQuery3.4.1.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+        </head>
+        
+
+        <body>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="../blogs.html">Blogs</a>
+                <a class="nav-item nav-link" href="../achievement.html">Achievement</a>
+                <a class="nav-item nav-link" href="../gallery.html">Gallery</a>
+                <a class="nav-item nav-link" href="../about.html">About</a>
+            </div>
+         </nav>
+        
+
+<div  id='write'  class = 'is-node'><div>
+                <span class='badge'><span class='lead'><strong>Tags</strong></span></span>
+            <span class='badge' style='margin-left:1%; margin-right:1%'><span>Python</span></span></div><h1><a name="杭电抢课脚本使用说明" class="md-header-anchor"></a><span>杭电抢课脚本使用说明</span></h1><p><strong><span>作者</span></strong><span>：@Galaxyzeta</span></p><p><strong><span>QQ</span></strong><span>：1919737818</span></p><h2><a name="简介" class="md-header-anchor"></a><span>简介</span></h2><p><span>项目地址：</span><a href='https://github.com/Galaxyzeta/HDUClassEliminator' target='_blank' class='url'>https://github.com/Galaxyzeta/HDUClassEliminator</a></p><p><span>这是一个用百度云计算平台进行验证码打码的杭电专用抢课脚本。</span></p><p><span>两个模式，一个抢</span><strong><span>通识选修课</span></strong><span>，一个抢</span><strong><span>专业选修课</span></strong><span>。</span></p><p><strong><span>提示：如果使用exe，以下内容跳过！</span></strong></p><p><span>使用前确保你已经在电脑上装好 Python 3.7 编译器，保证安装了以下包：</span></p><ul><li><span>PIL -- 用于验证码图像处理</span></li><li><span>Selenium  -- 用于浏览器自动化操作</span></li><li><span>requests -- 用于向网站发起辅助性的请求</span></li></ul><!--read more--><h2><a name="使用说明" class="md-header-anchor"></a><span>使用说明</span></h2><ol start='' ><li><span>如果有百度账号，跳过此步骤。否则应该</span><strong><span>注册一个百度账号</span></strong><span>。</span></li><li><span>前往百度云计算平台，登陆后创建一个</span><strong><span>文字识别任务</span></strong><span>。创建完毕后，记住 </span><strong><span>ApiKey</span></strong><span> 和 </span><strong><span>secretKey</span></strong></li><li><span>配置代码运行环境和包，直到没有报语法错误即可。(如果是exe运行的，不要管)</span></li><li><span>打开dist文件夹，</span><strong><span>参数修改正确</span></strong><span>：</span></li></ol><figure><table><thead><tr><th><span>参数名</span></th><th><span>说明</span></th></tr></thead><tbody><tr><td><span>username</span></td><td><span>你的学号</span></td></tr><tr><td><span>password</span></td><td><span>你的登陆密码</span></td></tr><tr><td><span>mode</span></td><td><span>mode=1 抢专业选修， mode=0 抢通识选修</span></td></tr><tr><td><span>course</span></td><td><span>mode=0有效，要抢的课的</span><strong><span>全名</span></strong></td></tr><tr><td><span>availableTime</span></td><td><span>均有效，要抢的课的</span><strong><span>时间</span></strong><span>，抢课前先去网站</span><strong><span>把时间完整无误复制</span></strong><span>过去。</span></td></tr><tr><td><span>teacherName</span></td><td><span>均有效。要抢的课的</span><strong><span>老师</span></strong><span>，同样需要</span><strong><span>老师全名</span></strong></td></tr><tr><td><span>ApiKey</span></td><td><span>百度云计算平台任务的 ApiKey</span></td></tr><tr><td><span>secretKey</span></td><td><span>百度云计算平台任务的密钥</span></td></tr><tr><td><span>refresh_rate</span></td><td><span>单次检测的刷新时间，以秒为单位</span></td></tr></tbody></table></figure><ol start='5' ><li><span>下载Chrome浏览器。</span></li><li><span>打开exe，抢课过程全程自动化操作，</span><strong><span>鼠标不要在里面乱点不然抢课失败！</span></strong></li><li><span>如果打开exe不能启动网页，安装chromedriver，版本和你的chrome浏览器版本对应，具体看：</span><a href='https://www.cnblogs.com/technologylife/p/5829944.html' target='_blank' class='url'>https://www.cnblogs.com/technologylife/p/5829944.html</a><span>，下载完毕后把 chromedriver.exe 替换 dist 下的同名文件。</span></li></ol><p><strong><span>注意1：为了保证抢课成功，必须正确配置参数，且保证课程不冲突，否则抢课失败不承担一切责任！（ε=ε=ε=┏(゜ロ゜;)┛）</span></strong></p><p><strong><span>注意2：</span></strong><span>自动输入的验证码和图片显示不一致是正常现象，因为脚本会额外访问一次服务器使其生成新的验证码，此时老验证码就失效了。</span></p><p><strong><span>容易出错的地方：</span></strong><span>请不要忘了修改 Mode！请不要忘了修改 Mode！请不要忘了修改 Mode！</span></p><h2><a name="更新记录" class="md-header-anchor"></a><span>更新记录</span></h2><ul><li><span>V 0.1</span></li></ul><p><span>2020-01-11-- 20: 00 初版。</span></p><ul><li><span>V 0.2</span></li></ul><p><span>2020-01-12-- 16: 00 exe版制作完成。</span></p><ol start='' ><li><span>修复了文档中把ApiKey错打成AppId的错误。</span></li><li><span>图像二值化处理，提高验证码识别成功概率。</span></li></ol></div>
 </body>
 </html>

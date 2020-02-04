@@ -1,44 +1,617 @@
 [
     {
-        "name": "塞尔达传说：梦见岛 | Legend of Zelda: Link's Awakening",
-        "platform": "GBC",
-        "status": "Beaten",
-        "time": "2020-01-10"
-    },
-    {
-        "name": "塞尔达传说：大地之章 | Legend of Zelda: Chapter of Season",
-        "platform": "GBC",
-        "status": "Playing",
-        "time": "---"
-    },
-    {
-        "name": "死亡细胞 | Dead Cells",
-        "platform": "PC",
-        "status": "Playing",
-        "time": "---"
-    },
-    {
-        "name": "节奏地牢 | Dungeon of the Necro Dancer",
-        "platform": "PC",
-        "status": "Almost Beaten",
+        "name": "[GBC]塞尔达传说：梦见岛 ",
+        "status": 1,
         "time": "2020-01"
     },
     {
-        "name": "失落城堡 | Lost Castle",
-        "platform": "PC",
-        "status": "Not playing",
+        "name": "[GBC]塞尔达传说：大地之章 ",
+        "status": 0,
+        "time": "2020-01"
+    },
+    {
+        "name": "[PC/NS]死亡细胞 ",
+        "status": 0,
+        "time": "2020-01"
+    },
+    {
+        "name": "[PC]节奏地牢 ",
+        "status": 0,
+        "time": "2020-01"
+    },
+    {
+        "name": "[PC]失落城堡 ",
+        "status": 0,
         "time": "2019-12"
     },
     {
-        "name": "洛克人同人：Rock'n Roll",
-        "platform": "PC",
-        "status": "AlmostBeaten",
+        "name": "[PC]洛克人同人：Rock'n Roll",
+        "status": 1,
         "time": "2019-12"
     },
     {
-        "name": "月圆之夜 | Night of the Full Moon",
-        "platform": "PC",
-        "status": "Not playing",
+        "name": "[PC]月圆之夜 ",
+        "status": 2,
         "time": "2019-11"
+    },
+    {
+        "name": "[NDS]塞尔达传说：灵魂轨迹 ",
+        "status": 1,
+        "time": "2019-11"
+    },
+    {
+        "name": "[NDS]塞尔达传说：幻影沙漏 ",
+        "status": 1,
+        "time": "2020-01"
+    },
+    {
+        "name": "[GBC]塞尔达传说：时空之章 ",
+        "status": 1,
+        "time": "2017"
+    },
+    {
+        "name": "[PC]星际争霸2 ",
+        "status": 0,
+        "time": "2020"
+    },
+    {
+        "name": "[PC]守望先锋 ",
+        "status": 0,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]极品飞车20 ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[XBOX360/PC]极品飞车18：宿敌 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]消逝的光芒2 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]看门狗2 ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[XBOX360/PC]极品飞车14: 热力追踪 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[NS/WiiU]马里奥赛车8 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[NS/WiiU]口袋妖怪铁拳 ",
+        "status": 0,
+        "time": "2019"
+    },
+    {
+        "name": "[NS]超级马里奥兄弟：奥德赛 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]红色警戒3 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[3DS]马里奥赛车7 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[NS]宝可梦：剑盾 ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]反恐精英1.6 ",
+        "status": 0,
+        "time": "2019"
+    },
+    {
+        "name": "[3DS]新超级马里奥兄弟2 ",
+        "status": 0,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]Minecraft",
+        "status": 1,
+        "time": "2018"
+    },
+    {
+        "name": "[PC]反恐精英：全球攻势 ",
+        "status": 1,
+        "time": "2018"
+    },
+    {
+        "name": "[PC/NS]洛克人11 ",
+        "status": 1,
+        "time": "2018"
+    },
+    {
+        "name": "[PC]星露谷物语 ",
+        "status": 0,
+        "time": "2018"
+    },
+    {
+        "name": "[PC]超级银河战士2同人重制版 ",
+        "status": 1,
+        "time": "2018"
+    },
+    {
+        "name": "[PC]血污：夜之仪式 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[NS]马里奥制造2 ",
+        "status": 2,
+        "time": "2020"
+    },
+    {
+        "name": "[GBA]恶魔城：月之轮回 ",
+        "status": 1,
+        "time": "2018"
+    },
+    {
+        "name": "[PS1]恶魔城：月下夜想曲 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]恶魔城：白夜协奏曲 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]恶魔城：晓月圆舞曲 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]恶魔城: 苍月的十字架 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]恶魔城: 被夺走的刻印 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[NDS]恶魔城: 迷宫的画廊 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]马里奥赛车DS ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]瓦里奥制造 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]新超级马里奥兄弟 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]口袋妖怪：心金/魂银 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]口袋妖怪：珍珠/钻石 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]口袋妖怪：黑/白 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]口袋妖怪：黑2/白2 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]口袋妖怪：X/Y ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[NDS]宝可梦：日/月 ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[NDS]宝可梦：究极之日/究极之月 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]恶魔城1 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]恶魔城3：德古拉的诅咒 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]新超级马里奥兄弟wii ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]新超级马里奥兄弟改版Newer ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]马里奥赛车改版Fun ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]马里奥赛车wii ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[SFC]马里奥赛车1 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[SFC]洛克人7 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]洛克人exe1 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]洛克人9 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[Wii]洛克人10 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]任天狗 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]星之卡比：呐喊队 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]星之卡比：超究极豪华版 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]宝可梦不思议迷宫：时之探险队 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]黄金太阳3 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]脑锻炼集合：右脑达人",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]逆转裁判1-3 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]逆转裁判4 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]星之卡比：镜之大迷宫 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]洛克人1-6 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]索尼克：色彩 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]索尼克冲刺大冒险 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]双截龙1 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]超级马里奥兄弟 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[SFC]超级马里奥兄弟世界 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[FC]超级马里奥兄弟3 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]塞尔达传说：缩小帽 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]洛克人Z 1-4 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]洛克人ZX/ZXA ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]V-Rally",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]索尼克A1 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[GB]牧场物语2 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]牧场物语：精灵驿站 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]牧场物语：双子村 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]牧场物语：养育你的小岛 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]牧场物语：风之集市 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]银河战士：猎人 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[GBA]银河战士：融合 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NDS]银河战士：零点任务 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[PC]公理边缘 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]饥荒 ",
+        "status": 2,
+        "time": "2019"
+    },
+    {
+        "name": "[PC]植物大战僵尸 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[PC/XBOX360]孤岛惊魂4 ",
+        "status": 0,
+        "time": "2019"
+    },
+    {
+        "name": "[XBOX360]孤岛惊魂3 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]孤岛惊魂2 ",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX]孤岛惊魂：本能 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]GTA5",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]GTA4",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：现代战争",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：世界战争",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：现代战争2",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：黑色行动",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：现代战争3",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]使命召唤：高级战争",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[PC]炉石传说 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]尘埃2 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]尘埃3 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]Forza Motorsports 3",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[NS/PC]胡闹厨房2 ",
+        "status": 1,
+        "time": "2019"
+    },
+    {
+        "name": "[XBOX360]神鬼寓言2 ",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]神鬼寓言3",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[PS]古惑狼",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[PS]古惑狼赛车",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]彩虹六号：维加斯1",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]彩虹六号：维加斯2",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]古墓丽影：地下世界",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]古墓丽影：9",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]古墓丽影：崛起",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]刺客信条2",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]刺客信条: 兄弟会",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]刺客信条: 启示录",
+        "status": 1,
+        "time": "0000"
+    },
+    {
+        "name": "[XBOX360]刺客信条: 黑旗",
+        "status": 2,
+        "time": "0000"
+    },
+    {
+        "name": "... ...",
+        "status": 0,
+        "time": "0000"
     }
 ]
