@@ -34,10 +34,7 @@
 
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a href="#" class="nav-link active btn-outline-primary" data-toggle="collapse" data-target="#gamelist" aria-expanded="false" aria-controls="gamelist" onclick="this.classList.contains('active')?this.classList.remove('active'):this.classList.add('active')">游戏</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link btn-outline-primary" data-toggle="collapse" data-target="#abilitylist" aria-expanded="false" aria-controls="abilitylist" onclick="this.classList.contains('active')?this.classList.remove('active'):this.classList.add('active')">计划</a>
+                <a href="#" class="nav-link active btn-outline-primary" data-toggle="collapse" data-target="#gamelist" aria-expanded="false" aria-controls="gamelist">游戏</a>
             </li>
         </ul>
 
@@ -50,20 +47,6 @@
             <hr>
             <gamelist-injection/>
         </div>
-
-        <ul class="list-group collapse c-abilitylist" id="abilitylist">
-            <abilitylist-injection/>
-            
-            <!-- PageNav -->
-            <nav aria-label="Page navigation">
-                <ul class="pagination show c-abilitylist"  aria-current="1">
-                    <!-- WARNING: This scope will be implemented && updated by code -->
-                    <!-- WARNING: This scope will be implemented && updated by code -->
-                    <!-- WARNING: This scope will be implemented && updated by code -->
-                </ul>
-            </nav>
-        </ul>
-        
     </div>
 
     <!-- init script for pagination-->
