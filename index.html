@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jQuery3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/background.js"></script>
     <style>
         footer {
-            background-color: darkblue;
+            background-color: rgba(35, 45, 135, 0.5);
             color: white;
             width: 100%;
             height: 128px;
@@ -23,6 +24,12 @@
     </style>
 </head>
 <body>
+    <div style="position: fixed; width: 100%; height: 100%; z-index: -1;">
+        <canvas id="c-animated" width="1920" height="1080"></canvas>
+    </div>
+    <div style="position: fixed; width: 100%; height: 100%; z-index: -2;">
+        <canvas id="c-bgp" width="1920" height="1080"></canvas>
+    </div>
     <div class="wrapper">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand navbar-light bg-light">
@@ -37,8 +44,9 @@
 
         <!-- Main Stuff -->
         <div class="container">
-            <h1>Galaxyzeta的小站</h1>
-            <p class="lead">
+            <p>&nbsp;</p>
+            <h1 class="text-white">Galaxyzeta的空间站</h1>
+            <p class="lead text-white">
                 Hi 能遇见你真的很好 留下来随便看看吧 :)
             </p>
             <hr>
@@ -85,5 +93,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Init Scripts-->
+    <script>
+        init()
+    </script>
 </body>
 </html>
