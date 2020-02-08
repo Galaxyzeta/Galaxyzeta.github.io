@@ -45,10 +45,59 @@
         const NSF_PLAYER = createNsfPlayer();
     </script>
     <div class="container">
-        <h3 id="id-chiptune-remastered">重制芯片音乐</h3>
-        <p class="small">* 部分芯片音乐(使用FDS/MMC5/VRC7芯片)不能播放，用ogg文件替代</p>
-        <ul class="list-group">
-            
+        <h3 id="id-chiptune-remastered">重制芯片音乐</h3>        
+        <script>
+            $('#exampleModal').on('show.bs.modal', event => {
+                var button = $(event.relatedTarget);
+                var modal = $(this);
+                // Use above variables to manipulate the DOM
+                
+            });
+        </script>
+        <p class="small">
+            * 部分芯片音乐(使用FDS/MMC5/VRC7芯片)不能播放，用ogg文件替代
+            <!-- Href trigger modal -->
+            <a data-toggle="modal" data-target="#c-modal-info" href="#">
+                <u>更多关于芯片音乐</u>
+            </a>
+        </p>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="c-modal-info" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title">关于芯片音乐</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <h3>起源和发展</h3>
+                            <p>芯片音乐最早源自上世纪70-90年代的游戏，包括雅达利（代表作吃豆人）、NintendoEntertainmentSystem（NES，日称FC，著名作品超级马里奥1等）、SegaMD（代表有索尼克）、
+                                超任（SFC/SNES，代表作超级银河战士等）等。当时的游戏音乐由主机内部芯片合成，音乐文件通过汇编写成。目前发展为Chiptune，是电子音乐的分支，泛指使用复古合成音色作曲的电子音乐。
+                                作者创作的芯片音乐属于纯8-bit风格音乐，因为不使用任何其他合成器或采样制作。</p>
+                            <h3>芯片介绍</h3>
+                            <p>FC主机使用的2A03芯片合成的8-bit音乐，由两个矩形波，一个三角波，一个噪波，一个采样（DPCM）五个通道构成。一般的，矩形波作主音，三角波作低音，
+                                噪波作打击乐。音色简洁而不简单。除了2A03，Konami公司使用的VRC6芯片新增锯齿波（强有力的低音/响亮主音）+两个VRC6矩形波，能生成更多浑厚音色。
+                                经典作曲为恶魔城3，其中的部分音乐在后续作品被重制无数次而成为经典。此外还有FDS（Nintendo），Namco163（南梦宫），SN5B（Sunsoft），VRC7等，
+                                不一一介绍了。
+                            </p>
+                            <h3>如何制作？</h3>
+                            <p>作者采用 Famitracker 制作，Nsf是FC芯片音乐存储格式。如果想要制作Chiptune，可采用 FruitStudio (FL，强力电子音乐制作软件，对新手友好)强力推荐。</p>
+                            
+                            <p><small>具体内容我会在后续文章中详细介绍</small></p>
+                            <p><small>2020-2-9 --Galaxyzeta</small></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     <div>
         <li class="list-group-item d-flex">
             <span class="col-9">[Nsf-2A03]Mega Man 11 - Acid Man Stage</span>
@@ -79,7 +128,6 @@
         </li>
     </div>
     
-        </ul>
         <hr>
 
         <h3 id="id-chiptune-original">原创芯片音乐</h3>
