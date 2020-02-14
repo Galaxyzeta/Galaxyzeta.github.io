@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jQuery3.4.1.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/background.js"></script>
+    <style>
+        footer {
+            background-color: rgba(35, 45, 135, 0.5);
+            color: white;
+            width: 100%;
+            height: 128px;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            padding-top: 16px;
+        }
+        .wrapper {
+            min-height: calc(100vh - 128px);
+        }
+    </style>
+</head>
+<body>
+    <div style="position: fixed; width: 100%; height: 100%; z-index: -1;">
+        <canvas id="c-animated" width="1920" height="1080"></canvas>
+    </div>
+    <div style="position: fixed; width: 100%; height: 100%; z-index: -2;">
+        <canvas id="c-bgp" width="1920" height="1080"></canvas>
+    </div>
+    <div class="wrapper">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="#">主页 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/static/blogs.html">文章</a>
+                <a class="nav-item nav-link" href="/static/achievement.html">足迹</a>
+                <a class="nav-item nav-link" href="/static/gallery.html">展览</a>
+                <a class="nav-item nav-link" href="/static/about.html">关于</a>
+            </div>
+        </nav>
+
+        <!-- Main Stuff -->
+        <div class="container">
+            <p>&nbsp;</p>
+            <h1 class="text-white">Galaxyzeta的空间站</h1>
+            <p class="lead text-white">
+                Hi 能遇见你真的很好 留下来随便看看吧 :)
+            </p>
+            <hr>
+            <div class="card text-left">
+                <div class="card-body">
+                <h4 class="card-title">优质应用推荐</h4>
+                <p class="card-text">
+                    推荐Typora，islider，vscode，spacesniffer，chrome等软件。拒绝扣脚软件从我做起。
+                </p>
+                <a href="blogs/优质软件推荐.html">[阅读全文]</a>
+                <small>* 不是打广告，是真的好用</small>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="card text-left">
+                <div class="card-body">
+                <h4 class="card-title">抢课太难，脚本搞定</h4>
+                <p class="card-text">个人开发的杭电抢课脚本，能抢通识选修课和专业选修课，亲测有效，解决一切因抢课导致的“我太难了”问题。</p>
+                <span><a href="blogs/杭电抢课脚本使用说明.html">[阅读全文]</a></span>
+                <span><a href="https://github.com/Galaxyzeta/HDUClassEliminator/releases/tag/v0.2">[立即体验]</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer align">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead">
+                        Contact Me
+                    </p>
+                    <span>
+                        <p>1919737818@qq.com | <a href="https://github.com/Galaxyzeta">Galaxyzeta's Github</a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <p class="lead">
+                        Made with
+                    </p>
+                    <p>Bootstrap4 | VSCode</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Init Scripts-->
+    <script>
+        init()
+    </script>
+</body>
+</html>
