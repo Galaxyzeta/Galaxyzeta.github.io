@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jQuery3.4.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/util.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <!-- Cannot directly open these links in the editor. But you can open them after Js Convertion launched. -->
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="../index.html">主页 <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#">文章</a>
+            <a class="nav-item nav-link" href="../gallery.html">展览</a>
+            <a class="nav-item nav-link" href="../about.html">关于</a>
+        </div>
+    </nav>
+
+    <!-- List Header Part -->
+    <div class="container">
+        <h1>其他</h1>
+        <p class="lead">
+            一些技术学习记录
+        </p>
+        <span><a href="../blogs.html">返回</a></span>
+    </div>
+    
+    <!-- Pages List -->
+    <!-- WARNING: <*blogs/*> is required for list generation! -->
+    <!-- WARNING: <*blogs/*> with no double * should never occur in any place in this html, except the one that makes a difference. -->
+    <div class="container">
+        
+    <div class="list-group-item list-unstyled">
+    
+        <div class="c-bloglist" style="display: none">
+            <div class="row">
+                <div class="col-4">
+                    <li><a href='blogs/优质软件推荐.html'>优质软件推荐</a></li>
+                </div>
+                <div class="col-4">
+                    <li>2020/11/19</li>
+                </div>
+                <div class="col-4">
+                    <li><span class="badge badge-pill badge-primary" style="margin-left:1%; margin-right:1%;"><a href="./archieve/archieve-其他.html" style="color: white">其他</a></span>
+		</li>
+                </div>               
+            </div>
+            <hr/>
+        </div>
+        
+        
+        <!-- PageNav -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination show c-bloglist" aria-current="1">
+                <!-- WARNING: This scope will be implemented && updated by code -->
+                <!-- WARNING: This scope will be implemented && updated by code -->
+                <!-- WARNING: This scope will be implemented && updated by code -->
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        newPageNav(1, 'div.c-bloglist', 'ul.pagination.c-bloglist[aria-current]', 'aria-current');
+    </script>
+</body>
+</html>
